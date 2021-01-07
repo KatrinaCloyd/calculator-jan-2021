@@ -3,7 +3,7 @@ const welcomeElem = document.getElementById('welcome');
 const body = document.getElementById('wholePage');
 const myButton = document.getElementById('change-button');
 const otherButton = document.getElementById('fix-button');
-const input = document.getElementById('text')
+const input = document.getElementById('text');
 
 // initialize state
 
@@ -12,7 +12,7 @@ const input = document.getElementById('text')
 myButton.addEventListener('click', () => {
     welcomeElem.style.color = 'red';
     welcomeElem.textContent = input.value;
-    body.style.background = "blue";
+    body.style.background = 'blue';
 });
 
 otherButton.addEventListener('click', () => {
