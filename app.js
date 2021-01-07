@@ -10,6 +10,12 @@ sumBtn.addEventListener('click', () => {
     const num2 = document.getElementById('number-2');
     const result = Number(num1.value) + Number(num2.value);
     mathResults.textContent = 'Your Answer is ' + result + '!';
+    if (isNaN(result)) {
+        mathResults.textContent = 'You did not enter a NUMBER. Try again.';
+    }
+    else {
+        mathResults.textContent = 'Your Answer is ' + result + '!';
+    }
 });
 
 subBtn.addEventListener('click', () => {
@@ -17,6 +23,12 @@ subBtn.addEventListener('click', () => {
     const num2 = document.getElementById('number-2');
     const result = Number(num1.value) - Number(num2.value);
     mathResults.textContent = 'Your Answer is ' + result + '!';
+    if (isNaN(result)) {
+        mathResults.textContent = 'You did not enter a NUMBER. Try again.';
+    }
+    else {
+        mathResults.textContent = 'Your Answer is ' + result + '!';
+    }
 });
 
 multBtn.addEventListener('click', () => {
@@ -24,14 +36,22 @@ multBtn.addEventListener('click', () => {
     const num2 = document.getElementById('number-2');
     const result = Number(num1.value) * Number(num2.value);
     mathResults.textContent = 'Your Answer is ' + result + '!';
+    if (isNaN(result)) {
+        mathResults.textContent = 'You did not enter a NUMBER. Try again.';
+    }
+    else {
+        mathResults.textContent = 'Your Answer is ' + result + '!';
+    }
 });
 
 divBtn.addEventListener('click', () => {
     const num1 = document.getElementById('number-1');
     const num2 = document.getElementById('number-2');
     const result = Number(num1.value) / Number(num2.value);
-    mathResults.textContent = 'Your Answer is ' + result + '!';
-    if (num1 = NaN) {
-        mathResults.textContent = 'You did not enter a NUMBER!';
+    if (isNaN(result)) {
+        mathResults.textContent = 'You did not enter a NUMBER. Try again.';
+    }
+    else {
+        mathResults.textContent = 'Your Answer is ' + result + '!';
     }
 });
